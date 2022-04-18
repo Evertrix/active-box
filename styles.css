@@ -29,7 +29,7 @@ body {
 nav {
   display: flex;
   padding: 2% 0%;
-  margin: auto 15%;
+  margin: auto 5%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid white;
@@ -73,14 +73,15 @@ nav img {
 }
 
 .header-text-box {
-  width: 90%;
+  /* width: 90%; */
   color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* top: 50%; */
+  top: 30px;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
   text-align: center;
-  position: absolute;
+  position: relative;
 }
 
 .header-text-box h1 {
@@ -279,9 +280,9 @@ p {
 
 .team-col {
   flex-basis: 25%;
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 5%;
-  margin: auto 20px 50px;
+  /* margin: auto 20px 50px; */
   box-sizing: border-box;
 }
 
@@ -514,7 +515,7 @@ p {
   .nav-links {
     position: absolute;
     background: #f44336;
-    height: 50vh;
+    height: auto;
     width: 200px;
     top: -100vh;
     right: 0px;
@@ -621,7 +622,7 @@ p {
   .team-col {
     flex-basis: 25%;
     margin-bottom: 5%;
-    margin: auto 50px 50px;
+    margin: auto 0;
     box-sizing: border-box;
   }
 
@@ -666,8 +667,13 @@ p {
 
   .team {
     font-family: 'Raleway', sans-serif;
-    margin: 0% auto 10% auto;
+    /* margin: 0% auto 10% auto; */
+    margin: 0 auto;
     width: auto;
+  }
+
+  .team-col {
+    margin: 0 auto;
   }
 
   .slider-section>.slider-row>.carolsel-slider,
@@ -683,6 +689,7 @@ p {
   }
 
   .team-col {
-    margin: auto 25px 50px;
+    /* margin: auto 25px 50px; */
+    margin: 0 auto;
   }
 }
