@@ -1,0 +1,23 @@
+{
+  "name": "active-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded styles/scss:styles/css",
+    "sass-prod": "sass --no-source-map --style=compressed styles/scss:styles/css"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evertrix/active-box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evertrix/active-box/issues"
+  },
+  "homepage": "https://github.com/Evertrix/active-box#readme",
+  "devDependencies": {
+    "sass": "^1.50.1"
+  }
+}

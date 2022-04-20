@@ -1,0 +1,278 @@
+/* Responsive Design Media Queries */
+
+@media (max-width: 1240px) {
+
+    .row {
+      display: block;
+    }
+  
+    .carolsel-slider {
+      width: 100%;
+      height: auto;
+    }
+  
+    .slider-image {
+      width: 100%;
+      height: 350px;
+    }
+  
+}
+  
+  @media (max-width: 1200px) {
+    .team-col {
+      width: 0 auto;
+    }
+  }
+  
+  @media only screen and (min-width: 480px) {
+    .works-unit {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .works-unit {
+      flex: 25%;
+      max-width: 33.3%;
+      max-height: 40%;
+    }
+  
+    .team-col {
+      width: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media(max-width: 1024px) {
+
+    .header {
+        min-height: 50vh;
+    }
+  
+    #close-button,
+    #menu-button {
+      display: block;
+    }
+  
+    .team-col {
+      width: 0 auto;
+    }
+  
+    .hero-section h1 {
+      font-size: 40px;
+    }
+  
+    .nav-links ul li {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      background: #f44336;
+      height: auto;
+      width: 200px;
+      top: -100vh;
+      right: 0px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+  
+    nav .fa {
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  
+    .nav-links ul {
+      padding: 15px;
+  
+    }
+  
+    .nav-links ul li {
+      font-size: 10px;
+      list-style: none;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 5px;
+      position: relative;
+    }
+  
+    .team {
+      font-family: 'Raleway', sans-serif;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .row {
+      margin: 0 auto;
+      flex-direction: column;
+    }
+  
+    .team {
+      flex-direction: column;
+    }
+  
+    .team-col>p {
+      width: 265px;
+    }
+  
+    .slider-row {
+      flex-direction: column;
+    }
+  
+    .works-section {
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+  
+    .works-container {
+      margin: -5px;
+      display: flex;
+    }
+  
+    .image-col>img {
+      flex-basis: 25%;
+      margin: 1px;
+      width: 100%;
+      margin-bottom: 5%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+    }
+  
+    .slider-col {
+      max-height: 100%;
+      height: 100%;
+    }
+  
+    .slider-image {
+      height: 100%;
+      width: 100%;
+    }
+  
+  }
+  
+  @media(max-width: 768px) {
+
+    .header {
+        min-height: 50vh;
+    }
+
+    .hero-section>h1 {
+      font-size: 40px;
+    }
+
+    .team {
+      font-family: 'Raleway', sans-serif;
+      margin: 0% auto 10% auto;
+      width: 50%;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .team-col>p {
+      width: 265px;
+    }
+  
+    .team-col {
+      flex-basis: 25%;
+      margin-bottom: 5%;
+      margin: 50px 0;
+      box-sizing: border-box;
+    }
+  
+    .team-col>p {
+      font-family: 'Raleway', sans-serif;
+    }
+  
+    .text-team-decor>h2 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+    }
+  
+    .text-team-decor>span {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      color: crimson;
+      text-transform: uppercase;
+    }
+  
+    .team-col>p {
+      font-family: 'Raleway', sans-serif;
+    }
+  
+    .text-team-decor>h2,
+    .text-team-decor>span {
+      padding: 10px;
+    }
+  
+    .slider-row {
+      display: block;
+    }
+  
+    .carolsel-slider {
+      width: 100%;
+      height: auto;
+    }
+  
+    .slider-image {
+      width: 100%;
+      height: 100%;
+    }
+  
+  }
+  
+  @media(max-width: 480px) {
+  
+    .hero-section > h1 {
+      font-size: 20px;
+    }
+  
+    .team {
+      font-family: 'Raleway', sans-serif;
+      margin: 0 auto;
+      width: auto;
+    }
+  
+    .team-col {
+      margin: 0 auto;
+    }
+
+    .slideshow-container {
+      height: 300px;
+    }
+    
+  }
+  
+  @media(max-width: 325px) {
+
+    .hero-section {
+      top: 60%;
+    }
+  
+    .team-col {
+      margin: 0 auto;
+    }
+  
+    .carolsel-slider, .slider-image {
+      width: 100%;
+    }
+
+    .slideshow-container {
+      height: 300px;
+    }
+
+  }
