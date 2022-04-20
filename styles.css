@@ -76,7 +76,7 @@ nav img {
   /* width: 90%; */
   color: #fff;
   /* position: absolute; */
-  top: 0;
+  top: 10%;
   /* top: 30px; */
   margin: 0 auto;
   transform: translateY(25%);
@@ -290,7 +290,7 @@ p {
 .team-col {
   /* flex-basis: 25%; */
   /* width: 100%; */
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
   margin: 20px;
 }
 
