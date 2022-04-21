@@ -1,14 +1,8 @@
 /* features Section */
 .features {
     width: 80%;
-    margin: auto;
+    margin: 5% auto;
     text-align: center;
-    padding-top: 100px;
-  }
-  
-  h2 {
-    font-size: 36px;
-    font-weight: 600;
   }
   
   p {
@@ -23,19 +17,25 @@
     padding: auto 50px 20px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
+    .features-col {
+      flex-basis: 31%;
+      border-radius: 10px;
+      margin: 3%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+
+      h3 {
+        font-weight: 700;
+        font-size: 15px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+      }
+
+    }
   }
-  
-  .features-col {
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin: 3%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-  }
-  
-  .features-col>h2 {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
+
   
   /* features End */

@@ -2,10 +2,10 @@
 
 .team {
     width: 50%;
-    margin: auto;
+    margin: 5% auto;
     text-align: center;
     /* padding-top: 100px; */
-    padding-bottom: 100px;
+    // padding-bottom: 100px;
     display: flex;
     justify-content: center;
   }
@@ -18,17 +18,28 @@
   }
 
   
-  .text-team-decor>h2 {
-    font-weight: 300;
-    font-size: 23px;
+  .text-team-decor {
+    h2 {
+      font-weight: 300;
+      font-size: 23px;
+      padding: 10px;
+    }
+
+    span {
+      font-weight: 300;
+      font-size: 13px;
+      color: crimson;
+      text-transform: uppercase;
+      padding: 10px;
+    }
   }
   
-  .text-team-decor>span {
-    font-weight: 300;
-    font-size: 13px;
-    color: crimson;
-    text-transform: uppercase;
-  }
+  // .text-team-decor>span {
+  //   font-weight: 300;
+  //   font-size: 13px;
+  //   color: crimson;
+  //   text-transform: uppercase;
+  // }
   
   .team-col>p {
     font-size: 14px;

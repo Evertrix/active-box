@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap");
+/*font-family: 'Raleway', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Cardo', sans-serif;*/
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+/*
+    MAIN COLOR: #087f5b
+    GREY COLOR: #343a40
+*/
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +46,7 @@ body {
   position: relative;
 }
 
-nav {
+.navigation {
   display: flex;
   padding: 2% 0%;
   margin: auto 5%;
@@ -38,18 +54,11 @@ nav {
   align-items: center;
   border-bottom: 1px solid white;
 }
-
-.hamburger-menu, .close-btn {
-  width: 30px;
-  display: none;
-}
-
-.nav-links {
+.navigation .nav-links {
   flex: 1;
   text-align: right;
 }
-
-.nav-links ul li {
+.navigation .nav-links ul li {
   font-weight: 700;
   text-transform: uppercase;
   list-style: none;
@@ -59,11 +68,16 @@ nav {
   padding: 8px 20px;
   position: relative;
 }
-
-.nav-links ul li a {
+.navigation .nav-links ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 13px;
+}
+
+.hamburger-menu,
+.close-btn {
+  width: 30px;
+  display: none;
 }
 
 .nav-links ul li::after {
@@ -77,36 +91,21 @@ nav {
 }
 
 .hero-section {
-  /* width: 90%; */
   color: #fff;
-  /* position: absolute; */
   top: 10%;
-  margin: auto 5%;
-  /* top: 30px; */
   margin: 0 auto;
   transform: translateY(25%);
   left: 0%;
-  /* transform: translate(-50%, -50%); */
   text-align: center;
   position: relative;
 }
-
 .hero-section h1 {
   font-size: 62px;
   font-family: "Open Sans", sans-serif;
 }
-
-.features-col > h3 {
-  font-weight: 700;
-  font-size: 15px;
-  padding-top: 20px;
-  padding-bottom: 5px;
-  text-transform: uppercase;
-}
-
 .hero-section p {
   font-weight: 500;
-  margin: 30px 0 60px;
+  margin: 30px 0 60px 0;
   font-size: 20px;
   color: #fff;
 }
@@ -124,14 +123,13 @@ nav {
   position: relative;
   cursor: pointer;
 }
-
 .hero-btn:hover {
   background-color: red;
   border: 1px solid red;
   transition: 0.5s;
 }
 
-nav .fa {
+.navigation .fa {
   display: none;
 }
 
@@ -139,14 +137,8 @@ nav .fa {
 /* features Section */
 .features {
   width: 80%;
-  margin: auto;
+  margin: 5% auto;
   text-align: center;
-  padding-top: 100px;
-}
-
-h2 {
-  font-size: 36px;
-  font-weight: 600;
 }
 
 p {
@@ -161,65 +153,71 @@ p {
   padding: auto 50px 20px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
-
-.features-col {
+.row .features-col {
   flex-basis: 31%;
   border-radius: 10px;
   margin: 3%;
   padding: 20px 12px;
   box-sizing: border-box;
 }
-
-.features-col > h2 {
-  margin-top: 5%;
-  margin-bottom: 5%;
+.row .features-col h3 {
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
 /* features End */
 /* Image/Works Section */
 .works-section {
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+  margin: 5% auto;
   text-align: center;
-  min-height: 50vh;
   width: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
-.works-container {
-  margin: -5px;
-  display: flex;
-}
-
 .overlay > .works-info > h3 {
   text-transform: uppercase;
-}
-
-.works-container {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .works-unit {
   flex: 100%;
   max-width: 100%;
 }
-
 .works-unit img {
   vertical-align: middle;
-}
-
-.works-image {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .works-image-container {
   position: relative;
   width: 100%;
+}
+.works-image-container .works-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.works-image-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.works-image-container .overlay:hover {
+  transition: 0.5s ease;
+  background-color: crimson;
 }
 
 .works-unit > .works-image-container > img {
@@ -230,32 +228,14 @@ p {
   color: white;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  /* opacity: 0;
-  transition: 0.5s ease;
-  background-color: crimson; */
-  opacity: 0;
-}
-
-.overlay:hover {
-  transition: 0.5s ease;
-  background-color: crimson;
-}
-
 .works-image-container:hover .overlay {
   opacity: 0.9;
   background-color: crimson;
 }
 
 .works-info {
-  color: white;
+  width: 100%;
+  color: #f2f2f2;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -268,10 +248,9 @@ p {
 /* Team Section */
 .team {
   width: 50%;
-  margin: auto;
+  margin: 5% auto;
   text-align: center;
   /* padding-top: 100px; */
-  padding-bottom: 100px;
   display: flex;
   justify-content: center;
 }
@@ -283,16 +262,17 @@ p {
   margin: 20px;
 }
 
-.text-team-decor > h2 {
+.text-team-decor h2 {
   font-weight: 300;
   font-size: 23px;
+  padding: 10px;
 }
-
-.text-team-decor > span {
+.text-team-decor span {
   font-weight: 300;
   font-size: 13px;
   color: crimson;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 .team-col > p {
@@ -311,6 +291,10 @@ p {
   max-height: 100%;
   position: relative;
 }
+.slideshow-container .slider-col {
+  flex-basis: 50%;
+  box-sizing: border-box;
+}
 
 .prev,
 .next {
@@ -327,25 +311,14 @@ p {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.works-info {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 .numbertext {
@@ -373,20 +346,14 @@ p {
 }
 
 .slider-section {
-  margin: auto;
+  margin: 5% auto;
   width: 100%;
   text-align: center;
 }
-
-.slider-row {
+.slider-section .slider-row {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-.slider-col {
-  flex-basis: 50%;
-  box-sizing: border-box;
 }
 
 /* Slider/Testimonials End */
@@ -402,14 +369,12 @@ p {
   margin: 3%;
   box-sizing: border-box;
 }
-
-.ready-to-start-col > h2 {
+.ready-to-start-col h2 {
   font-size: 25px;
   font-weight: 300;
   margin-top: 5%;
 }
-
-.ready-to-start-col > p {
+.ready-to-start-col p {
   color: #585858;
   font-size: 10px;
   font-weight: 700;
@@ -421,17 +386,18 @@ p {
 /* Footer Section */
 .footer {
   position: relative;
-  background: #fff3f3;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 50px;
   background-color: rgb(58, 62, 99);
 }
-
-.copyright {
+.footer .copyright {
   position: absolute;
   bottom: 0;
   width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  background-color: rgb(50, 52, 85);
 }
 
 .social {
@@ -443,31 +409,31 @@ p {
   margin: 3%;
   box-sizing: border-box;
 }
-
-.social > i.fab {
+.social i.fab {
   color: #fff;
   border: 2px solid white;
   border-radius: 2px;
   margin: 10px 5px 0px 0px;
 }
-
-.social > p {
+.social p {
   text-transform: none;
   font-size: 12px;
   color: #c5c5c5;
 }
 
-.copyright {
-  text-align: center;
-  padding-top: 10px;
-  background-color: rgb(50, 52, 85);
-}
-
 /* Footer Section End */
 /* Responsive Design Media Queries */
+@media (min-width: 1440px) {
+  .works-section {
+    flex-wrap: nowrap;
+  }
+}
 @media (max-width: 1240px) {
-  .row {
-    display: block;
+  .team {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
   }
 
   .carolsel-slider {
@@ -496,6 +462,10 @@ p {
     flex: 25%;
     max-width: 33.3%;
     max-height: 40%;
+  }
+
+  .row {
+    flex-direction: row;
   }
 
   .team-col {
@@ -580,19 +550,12 @@ p {
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
-  }
-
-  .row {
     margin: 0 auto;
     flex-direction: column;
   }
 
-  .team {
-    flex-direction: column;
-  }
-
   .team-col > p {
-    width: 265px;
+    max-width: 100%;
   }
 
   .slider-row {
@@ -655,7 +618,7 @@ p {
   }
 
   .team-col > p {
-    width: 265px;
+    max-width: 100%;
   }
 
   .team-col {
@@ -672,7 +635,6 @@ p {
 
   .text-team-decor > span {
     font-weight: 300;
-    font-size: 10px;
     color: crimson;
     text-transform: uppercase;
   }
@@ -708,7 +670,7 @@ p {
   }
 
   .team-col {
-    margin: 0 auto;
+    margin: 50px auto;
   }
 
   .slideshow-container {

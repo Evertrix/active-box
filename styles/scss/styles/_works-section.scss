@@ -1,46 +1,63 @@
 /* Image/Works Section */
 .works-section {
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+    margin: 5% auto;
     text-align: center;
-    min-height: 50vh;
+    // min-height: 50vh;
     width: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
-  }
-  
-  .works-container {
-    margin: -5px;
-    display: flex;
+
+    // .works-container {
+    //   margin: -5px;
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
   }
   
   .overlay>.works-info>h3 {
     text-transform: uppercase;
   }
   
-  .works-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
   .works-unit {
     flex: 100%;
     max-width: 100%;
+    img {
+      vertical-align: middle;
+    }
   }
   
-  .works-unit img {
-    vertical-align: middle;
-  }
-  
-  .works-image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+  // .works-unit img {
+  //   vertical-align: middle;
+  // }
   
   .works-image-container {
     position: relative;
     width: 100%;
+    .works-image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+  
+      &:hover {
+        transition: 0.5s ease;
+        background-color: crimson;
+      }
+    }
   }
   
   .works-unit>.works-image-container>img {
@@ -51,32 +68,14 @@
     color: white;
   }
   
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    /* opacity: 0;
-    transition: 0.5s ease;
-    background-color: crimson; */
-    opacity: 0;
-  }
-  
-  .overlay:hover {
-    transition: 0.5s ease;
-    background-color: crimson;
-  }
-  
   .works-image-container:hover .overlay {
     opacity: 0.9;
     background-color: crimson;
   }
   
   .works-info {
-    color: white;
+    width: 100%;
+    color: #f2f2f2;
     font-size: 20px;
     position: absolute;
     top: 50%;

@@ -9,40 +9,41 @@
   position: relative;
 }
 
-nav {
+.navigation {
   display: flex;
   padding: 2% 0%;
   margin: auto 5%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid white;
+
+  .nav-links {
+    flex: 1;
+    text-align: right;
+
+    ul li {
+      font-weight: 700;
+      text-transform: uppercase;
+      list-style: none;
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 20px;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+      }
+    }
+  }
 }
 
-.hamburger-menu, .close-btn {
-  width: 30px; 
+.hamburger-menu,
+.close-btn {
+  width: 30px;
   display: none;
-}
-
-.nav-links {
-  flex: 1;
-  text-align: right;
-}
-
-.nav-links ul li {
-  font-weight: 700;
-  text-transform: uppercase;
-  list-style: none;
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  padding: 8px 20px;
-  position: relative;
-}
-
-.nav-links ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 13px;
 }
 
 .nav-links ul li::after {
@@ -56,38 +57,26 @@ nav {
 }
 
 .hero-section {
-  /* width: 90%; */
   color: #fff;
-  /* position: absolute; */
   top: 10%;
-  margin: auto 5%;
-  /* top: 30px; */
+  // margin: auto 5%;
   margin: 0 auto;
   transform: translateY(25%);
   left: 0%;
-  /* transform: translate(-50%, -50%); */
   text-align: center;
   position: relative;
-}
 
-.hero-section h1 {
-  font-size: 62px;
-  font-family: 'Open Sans', sans-serif;
-}
+  h1 {
+    font-size: 62px;
+    font-family: 'Open Sans', sans-serif;
+  }
 
-.features-col>h3 {
-  font-weight: 700;
-  font-size: 15px;
-  padding-top: 20px;
-  padding-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.hero-section p {
-  font-weight: 500;
-  margin: 30px 0 60px;
-  font-size: 20px;
-  color: #fff;
+  p {
+    font-weight: 500;
+    margin: 30px 0 60px 0;
+    font-size: 20px;
+    color: #fff;
+  }
 }
 
 .hero-btn {
@@ -102,15 +91,15 @@ nav {
   background-color: #f44336;
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    background-color: red;
+    border: 1px solid red;
+    transition: 0.5s;
+  }
 }
 
-.hero-btn:hover {
-  background-color: red;
-  border: 1px solid red;
-  transition: 0.5s;
-}
-
-nav .fa {
+.navigation .fa {
   display: none;
 }
 
