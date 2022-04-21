@@ -16,6 +16,10 @@ body {
   height: 100vh;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Header Seaction  */
 .header {
   min-height: 80vh;
@@ -35,8 +39,9 @@ nav {
   border-bottom: 1px solid white;
 }
 
-nav img {
-  width: 200px;
+.hamburger-menu, .close-btn {
+  width: 30px;
+  display: none;
 }
 
 .nav-links {
@@ -45,7 +50,6 @@ nav img {
 }
 
 .nav-links ul li {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   list-style: none;
@@ -92,7 +96,6 @@ nav img {
 }
 
 .features-col > h3 {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 15px;
   padding-top: 20px;
@@ -128,11 +131,6 @@ nav img {
 }
 
 nav .fa {
-  display: none;
-}
-
-#close-button,
-#menu-button {
   display: none;
 }
 
@@ -503,15 +501,32 @@ p {
     width: 0 auto;
     margin-bottom: 10px;
   }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .close-button {
+    display: none;
+  }
 }
 @media (max-width: 1024px) {
+  .hamburger-menu {
+    display: block !important;
+  }
+
+  .close-button {
+    display: block !important;
+  }
+
   .header {
     min-height: 50vh;
   }
 
-  #close-button,
-#menu-button {
+  .close-button {
     display: block;
+    font-size: 30px;
+    padding: 5%;
   }
 
   .team-col {

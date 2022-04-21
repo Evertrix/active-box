@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ActiveBox</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <link rel="stylesheet" href="./styles/css/main.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -22,8 +22,8 @@
         <nav class="menu">
             <a href="index.html"><img src="images/logo.png" alt="logo"></a>
             <div class="nav-links" id="nav-links">
-                <i style="padding: 5%; font-size: 30px;" id="close-button" class="far fa-window-close"
-                    onclick="hideMenu()"></i>
+                <!-- <i class="far fa-window-close close-button" style="font-size: 30px;"></i> -->
+                <img class="close-button" src="images/icon-close.svg" alt="" srcset="">
                 <ul>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#works">Works</a></li>
@@ -32,10 +32,13 @@
                     <li><a href="#download">Download</a></li>
                 </ul>
             </div>
-            <i style="font-size: 30px;" id="menu-button" class="fas fa-bars" onclick="showMenu()"></i>
+            <img class="hamburger-menu" src="images/icon-hamburger.svg" alt="" srcset="">
+            <!-- <div class="hamburger-menu-container">
+                <i class="fas fa-bars hamburger-menu" style="font-size: 30px;"></i>
+            </div> -->
         </nav>
         <section class="hero-section">
-            <h1>YOUR FAVOURITE ONE PAGE<br> MULTI PURPOSE TEPLATE</h1>
+            <h1>YOUR FAVOURITE ONE PAGE<br> MULTI PURPOSE TEMPLATE</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, lectus nec vestibulum
                 pulvinar,<br> lectus diam pellentesque urna.</p>
             <button class="hero-btn">FIND OUT MORE</button>

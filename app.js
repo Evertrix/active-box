@@ -3,17 +3,36 @@ let menu = document.getElementById('menu-button');
 let closeBtn = document.getElementById('close-button');
 let navigation = document.getElementById("nav-links");
 let listMenu = document.getElementById('menu');
+//------------
+let hamburger_menu = document.querySelector('.hamburger-menu-container');
+let close_btn = document.querySelector('.close-button');
 
-function showMenu() {
+
+window.addEventListener("resize", () => {
+  // if (hamburger_menu.clicked === true) {
+      if (window.matchMedia("@media only screen and (min-width: 1020px)").matches) {
+          // navigation.style.top = "0";
+          document.querySelector('.hamburger-menu').style.display="none";
+          document.querySelector('.hamburger-menu').style.display="none";
+          close_btn.style.display="none";
+          document.querySelector('.close-button').style.display="none";
+      }
+  // }
+});
+
+
+document.querySelector('.hamburger-menu').addEventListener('click', () => {
   navigation.style.top = "0";
-}
+});
 
-function hideMenu() {
+document.querySelector('.close-button').addEventListener('click', () => {
   navigation.style.top = "-100vh";
-}
+});
+
 // Responsive navigation Menu
 
 // Slider For Testimonials
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

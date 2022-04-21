@@ -18,8 +18,9 @@ nav {
   border-bottom: 1px solid white;
 }
 
-nav img {
-  width: 200px;
+.hamburger-menu, .close-btn {
+  width: 30px; 
+  display: none;
 }
 
 .nav-links {
@@ -28,7 +29,6 @@ nav img {
 }
 
 .nav-links ul li {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   list-style: none;
@@ -75,7 +75,6 @@ nav img {
 }
 
 .features-col>h3 {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 15px;
   padding-top: 20px;
@@ -114,9 +113,10 @@ nav .fa {
   display: none;
 }
 
-#close-button,
-#menu-button {
-  display: none;
-}
+// .fa-window-close {
+//   display: none;
+//   font-size: 30px;
+//   padding: 5%; 
+// }
 
 /* header End */
