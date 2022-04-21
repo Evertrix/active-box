@@ -693,6 +693,10 @@ p {
   .slideshow-container {
     height: 300px;
   }
+
+  .social {
+    margin: 7%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
