@@ -68,7 +68,10 @@ function showSlides(n) {
 
 
 // Rendeing throught Dom the Features section
-const features_section = document.querySelector('.row');
+const features_section = document.querySelector('.features');
+const row_child = document.createElement('div');
+row_child.classList.add('row');
+features_section.appendChild(row_child);
 
 const fetures_object = [{
     src: 'images/icon1.png',
@@ -97,7 +100,7 @@ const fetures_object = [{
 ];
 
 function featuresContent(src, title) {
-  return features_section.innerHTML += `
+  return row_child.innerHTML += `
   <div class="features-col">
                 <img src="${src}" alt="">
                 <h3>${title}</h3>
@@ -159,4 +162,60 @@ function workContent(src) {
 
 for (const key in Object.entries(works_object)) {
   workContent(works_object[key].src);
+}
+
+
+// Rendeing throught Dom the Teams section
+
+const team_section = document.querySelector('.team');
+
+const teams_object = [{
+    src: 'images/person1.jpg',
+    name: 'Ruth Woods',
+    position: 'Founder, CEO'
+  },
+  {
+    src: 'images/person2.jpg',
+    name: 'Timothy Reed',
+    position: 'Co-Founder, Developer'
+  },
+  {
+    src: 'images/person3.jpg',
+    name: 'Victoria Valdez',
+    position: 'UI Designer'
+  },
+  {
+    src: 'images/person4.jpg',
+    name: 'Beverly Little',
+    position: 'Data Scientist'
+  },
+];
+
+function teamContent(src, name, position) {
+  return team_section.innerHTML += `
+  <div class="team-col">
+            <img src="${src}" alt="">
+            <div class="text-team-decor">
+                <h2>${name}</h2>
+                <span>${position}</span>
+            </div>
+            <p class="team-col-text">Fusce dapibus, tellus ac cursus
+                commodo, tortor mauris condimentum
+                nibh, ut fermentum massa justo sit amet
+                risus. Maecenas sed diam eget risus
+                varius blandit sit amet non magna.
+                Nullam quis risus eget urna mollis ornare
+                vel eu leo.</p>
+            <div class="social">
+                <i class="fab fa-facebook-f"
+                    style="color: gray; width: 15px; padding: 8px; border: 0.5px solid gray;"></i>
+                <i class="fab fa-twitter" style="color: gray; width: 15px; padding: 8px; border: 0.5px solid gray;"></i>
+                <i class="fab fa-linkedin"
+                    style="color: gray; width: 15px; padding: 8px; border: 0.5px solid gray;"></i>
+            </div>
+        </div>`;
+}
+
+for (const key in Object.entries(teams_object)) {
+  teamContent(teams_object[key].src, teams_object[key].name, teams_object[key].position);
 }
