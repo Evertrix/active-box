@@ -57,7 +57,7 @@ I used simple JavaScript to create the slider carousel and an array of objects t
 
 ## Author
 
-- Github - [Github/evertrix][12]
+- Github - [Github/Evgeni-Georgiev][12]
 - Frontend Mentor - [@EvgeniGeorgiev][13]
 - LinkedIn - [@EvgeniGeorgiev][14]
 
@@ -74,6 +74,6 @@ Thank you!
 [9]:	#continued-development
 [10]:	#author
 [11]:	https://active-box-landing-page.netlify.app/
-[12]:	https://github.com/Evertrix
+[12]:	https://github.com/Evgeni-Georgiev
 [13]:	https://www.frontendmentor.io/profile/Evertrix
 [14]:	https://www.linkedin.com/in/evgeni-georgiev-755921166/
