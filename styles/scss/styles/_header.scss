@@ -28,13 +28,13 @@
       display: inline-block;
       text-decoration: none;
       color: #fff;
-      padding: 8px 20px;
+      padding: 0.8rem 2rem;
       position: relative;
 
       a {
         text-decoration: none;
         color: #fff;
-        font-size: 13px;
+        font-size: 1.3rem;
       }
     }
   }
@@ -42,14 +42,14 @@
 
 .hamburger-menu,
 .close-btn {
-  width: 30px;
+  width: 3rem;
   display: none;
 }
 
 .nav-links ul li::after {
   content: '';
   width: 0%;
-  height: 2px;
+  height: 0.2rem;
   background: #f44336;
   display: block;
   margin: auto;
@@ -67,14 +67,14 @@
   position: relative;
 
   h1 {
-    font-size: 62px;
+    font-size: 6.2rem;
     font-family: 'Open Sans', sans-serif;
   }
 
   p {
     font-weight: 500;
-    margin: 30px 0 60px 0;
-    font-size: 20px;
+    margin: 3rem 0 6rem 0;
+    font-size: 2rem;
     color: #fff;
   }
 }
@@ -84,10 +84,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  border: 1px solid #f44336;
-  padding: 12px 64px;
-  margin-bottom: 50px;
-  font-size: 12px;
+  border: 0.1rem solid #f44336;
+  padding: 1.2rem 6.4rem;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
   background-color: #f44336;
   position: relative;
   cursor: pointer;

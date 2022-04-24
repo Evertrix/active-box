@@ -10,13 +10,13 @@ let close_btn = document.querySelector('.close-button');
 
 window.addEventListener("resize", () => {
   // if (hamburger_menu.clicked === true) {
-      if (window.matchMedia("@media only screen and (min-width: 1020px)").matches) {
-          // navigation.style.top = "0";
-          document.querySelector('.hamburger-menu').style.display="none";
-          document.querySelector('.hamburger-menu').style.display="none";
-          close_btn.style.display="none";
-          document.querySelector('.close-button').style.display="none";
-      }
+  if (window.matchMedia("@media only screen and (min-width: 1020px)").matches) {
+    // navigation.style.top = "0";
+    document.querySelector('.hamburger-menu').style.display = "none";
+    document.querySelector('.hamburger-menu').style.display = "none";
+    close_btn.style.display = "none";
+    document.querySelector('.close-button').style.display = "none";
+  }
   // }
 });
 
@@ -64,3 +64,50 @@ function showSlides(n) {
   dots[slideIndex - 1].classList.add("active");
 }
 // Slider For Testimonials
+
+
+
+// Rendeing throught Dom the Features section
+const features_section = document.querySelector('.row');
+
+const fetures_object = [{
+    src: 'images/icon1.png',
+    title: 'Easily Customised'
+  },
+  {
+    src: 'images/icon2.png',
+    title: 'Responsive Design'
+  },
+  {
+    src: 'images/icon3.png',
+    title: 'Modern Design'
+  },
+  {
+    src: 'images/icon4.png',
+    title: 'Clean Code'
+  },
+  {
+    src: 'images/icon5.png',
+    title: 'Ready To Ship'
+  },
+  {
+    src: 'images/icon6.png',
+    title: 'Download From Here'
+  },
+];
+
+function featuresContent(src, title) {
+  return features_section.innerHTML += `
+  <div class="features-col">
+                <img src="${src}" alt="">
+                <h3>${title}</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas
+                    eget quam. Nullam quis risus eget urna mollis
+                    ornare vel eu leo. Donec ullamcorper nulla</p>
+            </div>
+`;
+}
+
+for (const key in Object.entries(fetures_object)) {
+  featuresContent(fetures_object[key].src, fetures_object[key].title);
+}

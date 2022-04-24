@@ -18,13 +18,13 @@
     top: 0;
     top: 50%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.8rem;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 0.3rem 0.3rem 0;
 
     &:hover {
       background-color: rgba(0, 0, 0, 0.8);
@@ -33,7 +33,7 @@
   
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0.3rem 0 0 0.3rem;
   }
   
   // .prev:hover,
@@ -43,17 +43,17 @@
   
   .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
     position: absolute;
     top: 0;
   }
   
   .dot {
     cursor: pointer;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin: 0 0.2rem;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
