@@ -58,8 +58,8 @@ I used simple JavaScript to create the slider carousel and an array of objects t
 ## Author
 
 - Github - [Github/evertrix][12]
-- Frontend Mentor - [@ Evgeni Georgiev][13]
-- LinkedIn - [@ Evgeni Georgiev][14]
+- Frontend Mentor - [@EvgeniGeorgiev][13]
+- LinkedIn - [@EvgeniGeorgiev][14]
 
 Thank you!
 
