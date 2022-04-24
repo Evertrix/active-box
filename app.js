@@ -111,3 +111,52 @@ function featuresContent(src, title) {
 for (const key in Object.entries(fetures_object)) {
   featuresContent(fetures_object[key].src, fetures_object[key].title);
 }
+
+
+// Rendeing throught Dom the Work section
+const work_section = document.querySelector('.works-section');
+
+const works_object = [{
+    src: 'images/work1.jpg',
+  },
+  {
+    src: 'images/work2.jpg',
+  },
+  {
+    src: 'images/work3.jpg',
+  },
+  {
+    src: 'images/work4.jpg',
+  },
+  {
+    src: 'images/work5.jpg',
+  },
+  {
+    src: 'images/work6.jpg',
+  },
+  {
+    src: 'images/work7.jpg',
+  },
+  {
+    src: 'images/work8.jpg',
+  },
+];
+
+function workContent(src) {
+  return work_section.innerHTML += `
+  <div class="works-unit">
+            <div class="works-image-container">
+                <img src="${src}" class="works-image">
+                <div class="overlay">
+                    <div class="works-info">
+                        <h3 class="works-title">Project Name</h3>
+                        <p class="works-desctiption">User Interface Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+}
+
+for (const key in Object.entries(works_object)) {
+  workContent(works_object[key].src);
+}
