@@ -27,9 +27,11 @@ Users should be able to:
 ### Screenshots of results
 
 Desktop(1440px):
+
 ![Active Box](./designs/active-box-desktop-1440px.png)
 
 Mobile(325px):
+
 ![Active Box](./designs/active-box-mobile-325px.png)
 
 ### Links
