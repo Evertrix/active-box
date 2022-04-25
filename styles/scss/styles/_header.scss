@@ -57,6 +57,8 @@
 }
 
 .hero-section {
+  display: flex;
+  flex-direction: column;
   color: #fff;
   top: 10%;
   // margin: auto 5%;
@@ -81,6 +83,8 @@
 
 .hero-btn {
   display: inline-block;
+  // width: 17%;
+  margin: 0 auto;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;

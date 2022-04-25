@@ -86,9 +86,9 @@
       display: block !important;
     }
 
-    .header {
-      min-height: 50vh;
-    }
+    // .header {
+    //   min-height: 0;
+    // }
 
     // li .hamburger-menu {
     //   display: none;
@@ -223,9 +223,9 @@
   
   @media(max-width: 768px) {
 
-    .header {
-      min-height: 50vh;
-    }
+    // .header {
+    //   min-height: 0;
+    // }
 
     .hero-section {
       h1 {
