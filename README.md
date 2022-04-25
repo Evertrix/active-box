@@ -26,9 +26,11 @@ Users should be able to:
 
 ### Screenshots of results
 
-Desktop(1440px): (./design/active-box-desktop-1440px.png)
+Desktop(1440px):
+![Active Box](./designs/active-box-desktop-1440px.png)
 
-Mobile(325px): (./design/active-box-mobile-325px.png)
+Mobile(325px):
+![Active Box](./designs/active-box-mobile-325px.png)
 
 ### Links
 
@@ -59,35 +61,3 @@ I used simple JavaScript to create the slider carousel and an array of objects t
 - LinkedIn - [@EvgeniGeorgiev][14]
 
 Thank you!
-
-<<<<<<< HEAD
-[1]: #overview
-[2]: #the-challenge
-[3]: #screenshot
-[4]: #links
-[5]: #my-process
-[6]: #tech-stack
-[7]: #built-with
-[8]: #what-i-learned
-[9]: #continued-development
-[10]: #author
-[11]: https://active-box-landing-page.netlify.app/
-[12]: https://github.com/Evertrix
-[13]: https://www.frontendmentor.io/profile/Evertrix
-[14]: https://www.linkedin.com/in/evgeni-georgiev-755921166/
-=======
-[1]:	#overview
-[2]:	#the-challenge
-[3]:	#screenshot
-[4]:	#links
-[5]:	#my-process
-[6]:	#tech-stack
-[7]:	#built-with
-[8]:	#what-i-learned
-[9]:	#continued-development
-[10]:	#author
-[11]:	https://active-box-landing-page.netlify.app/
-[12]:	https://github.com/Evgeni-Georgiev
-[13]:	https://www.frontendmentor.io/profile/Evertrix
-[14]:	https://www.linkedin.com/in/evgeni-georgiev-755921166/
->>>>>>> aeeedf3b2fb7bf65255181ec45245b8e338fe9fa
