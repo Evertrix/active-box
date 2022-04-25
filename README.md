@@ -12,8 +12,7 @@ This solution is part of an assignment for an internship application. With give 
   - [Tech Stack][6]
   - [Built with][7]
   - [What I learned][8]
-  - [Continued development][9]
-- [Author][10]
+- [Author][9]
 
 ## Overview
 
@@ -28,15 +27,15 @@ Users should be able to:
 
 Desktop(1440px):
 
-![Active Box](./designs/active-box-desktop-1440px.png)
+![Active Box][image-1]
 
 Mobile(325px):
 
-![Active Box](./designs/active-box-mobile-325px.png)
+![Active Box][image-2]
 
 ### Links
 
-- Live Site URL: [Live site URL][11]
+- Live Site URL: [Live site URL][10]
 
 ## My process
 
@@ -58,8 +57,23 @@ I used simple JavaScript to create the slider carousel and an array of objects t
 
 ## Author
 
-- Github - [Github/Evgeni-Georgiev][12]
-- Frontend Mentor - [@EvgeniGeorgiev][13]
-- LinkedIn - [@EvgeniGeorgiev][14]
+- Github - [Github/Evgeni-Georgiev][11]
+- LinkedIn - [@EvgeniGeorgiev][12]
 
 Thank you!
+
+[1]:	#overview
+[2]:	#the-challenge
+[3]:	#screenshot
+[4]:	#links
+[5]:	#my-process
+[6]:	#tech-stack
+[7]:	#built-with
+[8]:	#what-i-learned
+[9]:	#author
+[10]:	https://active-box-landing-page.netlify.app/
+[11]:	https://github.com/Evgeni-Georgiev/active-box
+[12]:	https://www.linkedin.com/in/evgeni-georgiev-755921166/
+
+[image-1]:	./designs/active-box-desktop-1440px.png
+[image-2]:	./designs/active-box-mobile-325px.png
